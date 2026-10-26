@@ -1,0 +1,46 @@
+name: Wide duration scalar validation
+on:
+  push:
+    branches: [validation/wide-duration-scalars]
+permissions:
+  contents: read
+jobs:
+  regression:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            compiler: gcc11
+          - os: ubuntu-24.04
+            compiler: clang-sanitized
+          - os: macos-14
+            compiler: clang
+          - os: windows-2022
+            compiler: msvc
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: b02a36674afc109ea23716d0c671548e605dd96c
+          path: fixed
+      - uses: actions/checkout@v4
+        with:
+          ref: 6248d64ed94916e446c83a038e8c8208ebb262ee
+          path: original
+      - uses: ilammy/msvc-dev-cmd@v1
+        if: runner.os == 'Windows'
+      - name: Install GCC 11
+        if: matrix.compiler == 'gcc11'
+        run: sudo apt-get update && sudo apt-get install -y g++-11
+      - name: Validate pinned original and fixed scalar arithmetic
+        env:
+          VALIDATION_COMPILER: ${{ matrix.compiler }}
+        run: python validation/scalars.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scalars-${{ matrix.os }}-${{ matrix.compiler }}
+          path: validation-output/
+          if-no-files-found: error

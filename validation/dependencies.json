@@ -1,0 +1,94 @@
+[
+  {
+    "repository": "boostorg/smart_ptr",
+    "head": "6e945160d788b8efdfc49ba4af1f8797cacd7c97"
+  },
+  {
+    "repository": "boostorg/algorithm",
+    "head": "cfc892ccbe5e22605757fdc438df18a4e9aa4f9a"
+  },
+  {
+    "repository": "boostorg/concept_check",
+    "head": "235e54ebf23be678045e0eeae90f47ca0e2c95ce"
+  },
+  {
+    "repository": "boostorg/config",
+    "head": "369d933b53ee985543a81c0329c57c86de121755"
+  },
+  {
+    "repository": "boostorg/io",
+    "head": "5c738076aa9aafc7392b2004c6b6f268b076a9f0"
+  },
+  {
+    "repository": "boostorg/preprocessor",
+    "head": "cd1b1bd03900b68505822cfa25cb16851bd6caf1"
+  },
+  {
+    "repository": "boostorg/tokenizer",
+    "head": "743082f58e964e7cef353a9678edaae055691ca0"
+  },
+  {
+    "repository": "boostorg/conversion",
+    "head": "d1b479f7a4aa54d8ffb93d8dc4ee0c24670210d8"
+  },
+  {
+    "repository": "boostorg/mpl",
+    "head": "9d1f81ffeb055ea1ce0d96370bf07c40a2843878"
+  },
+  {
+    "repository": "boostorg/utility",
+    "head": "c3f5f523dead32e1a1bbc92b1c1864d713ec16ea"
+  },
+  {
+    "repository": "boostorg/range",
+    "head": "7481e429b023655a6e77799d5f2cf4788145d494"
+  },
+  {
+    "repository": "boostorg/iterator",
+    "head": "9340e6ebdf17e487faf990b9d2ec7abd6cbac180"
+  },
+  {
+    "repository": "boostorg/type_traits",
+    "head": "e6275ccf01c9cf8775ef0cb6188bd58f3b167a0f"
+  },
+  {
+    "repository": "boostorg/move",
+    "head": "0027c0c063b1c54dbb3335dcb76fa6b944d5c267"
+  },
+  {
+    "repository": "boostorg/container",
+    "head": "e6e9b064b8e183c74b8fabcf1380e0b61e6c6312"
+  },
+  {
+    "repository": "boostorg/assert",
+    "head": "612d35df55376c6412f0477ed62d4d241f8861b7"
+  },
+  {
+    "repository": "boostorg/core",
+    "head": "177a1c61748a61a03aaa1d4ec696f81625e66cff"
+  },
+  {
+    "repository": "boostorg/throw_exception",
+    "head": "0924b53b40d1da33301f94fb97518f5a7df31e9b"
+  },
+  {
+    "repository": "boostorg/lexical_cast",
+    "head": "e4aed0be65036eb7802bdc09d7e04e61b01a43bd"
+  },
+  {
+    "repository": "boostorg/mp11",
+    "head": "0daffd6401724ddf473fd39d28f68e138d9a1303"
+  },
+  {
+    "repository": "boostorg/winapi",
+    "head": "094612ee33a8dce960cd075537266fdb4788d059"
+  },
+  {
+    "repository": "boostorg/predef",
+    "head": "80fea9874f2fc02351b3a1ade08867e7d510cf3f"
+  },
+  {
+    "repository": "boostorg/integer",
+    "head": "761179e7a5ec2945367fc83d3ec9f7b3c512c712"
+  }
+]
